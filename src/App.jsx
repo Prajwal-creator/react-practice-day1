@@ -2,7 +2,8 @@ import React from "react";
 import Navbar from'./components/navbar/navbar'
 import Sidebar from "./components/navbar/sidebar/sidebar";
 import Amd from "./components/navbar/sidebar/comp";
-
+import Card from "./components/navbar/sidebar/product"
+import Prod from "./components/navbar/sidebar/product1";
 
 const App=()=>{
           let b=70;
@@ -17,6 +18,9 @@ const App=()=>{
        }
        <Amd name="Amd" age={23} clas={c} description={"it is created by the prajwal"} num={d}/>
        <Amd name="Amd" age={23} clas={c} description={"it is Amd"} num={20}/>
+       <Card name="prajwal" age={20} role={"python full stack dev"}/>
+       <Prod productName={"Shampoo"} price={200} stock={true}/>
+       <Prod productName={"Shampoo"} price={200} stock={false}/>
     </div>
   )
 }
